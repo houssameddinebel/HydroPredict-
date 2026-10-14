@@ -46,12 +46,7 @@ PHP 8.3 installed via `winget install --id PHP.PHP.8.3`, with these
 extensions enabled in `php.ini`: `curl, mbstring, mysqli, openssl, pdo_mysql`.
 MySQL 8 (`MySQL80` service) running. Credentials live in `backend/.env`:
 
-```text
-DB_HOST=127.0.0.1
-DB_NAME=hydropredict
-DB_USER=root
-DB_PASS=12345
-```
+
 
 Import (use `cmd` redirection — a PowerShell pipe mangles UTF-8/Arabic):
 
