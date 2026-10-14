@@ -51,14 +51,13 @@ MySQL 8 (`MySQL80` service) running. Credentials live in `backend/.env`:
 Import (use `cmd` redirection — a PowerShell pipe mangles UTF-8/Arabic):
 
 ```bat
-mysql -u root -p12345 --default-character-set=utf8mb4 < backend\database.sql
 ```
 
 Serve (DB_* env vars must be set in the server's environment):
 
 ```powershell
 $env:DB_HOST='127.0.0.1'; $env:DB_NAME='hydropredict'
-$env:DB_USER='root'; $env:DB_PASS='12345'
+$env:DB_USER='root'; $env:DB_PASS=''
 php -S 127.0.0.1:8000 -t backend/
 ```
 
